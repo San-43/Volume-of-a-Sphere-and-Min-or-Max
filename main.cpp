@@ -52,16 +52,9 @@ void minOrMax() {
     double a;
     double b;
 
-    printf("Introduzca a: ");
-    if (scanf("%lf", &a) != 1) {
-        printf("Introduzca un valor correcto.");
-        return;
-    }
-    printf("Introduzca b: ");
-    if (scanf("%lf", &b) != 1) {
-        printf("Introduzca un valor correcto.");
-        return;
-    }
+    printf("*** MIN OR MAX ***\n");
+    a = get_double("Introduzca a: ");
+    b = get_double("Introduzca b: ");
 
     if (a == b) {
         printf("***** a igual a b *****");
@@ -80,17 +73,18 @@ void volumeCalculator() {
 
     printf("*** CÁLCULO DEL VÓLUMEN DE UNA ESFERA ***\n");
 
-    printf("Ingrese el radio r: ");
-    if (scanf("%lf", &r) != 1) {
-        printf("Por favor introduzca un valor correcto. \n");
-        return;
-    } else if (r == 0) {
-        printf("El radio no puede ser 0.");
-        return;
-    } else if (r < 0) {
-        printf("El radio no puede ser negativo");
-        return;
-    }
+    do {
+        r = get_double("Introduzca el radio: ");
+
+        if (r == 0) {
+            printf("El radio no puede ser 0.");
+            continue;
+        } else if (r < 0) {
+            printf("El radio no puede ser negativo");
+            continue;
+        }
+
+    } while (r <= 0);
 
     volumen = 4 * M_PI * pow(r, 3) / 3;
 
