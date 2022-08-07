@@ -1,0 +1,3 @@
+D:/Projects/C++/Volumen of a Sphere and Min or Max/cmake-build-debug/CMakeFiles/Volumen_of_a_Sphere_and_Min_or_Max.dir
+D:/Projects/C++/Volumen of a Sphere and Min or Max/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Projects/C++/Volumen of a Sphere and Min or Max/cmake-build-debug/CMakeFiles/rebuild_cache.dir
