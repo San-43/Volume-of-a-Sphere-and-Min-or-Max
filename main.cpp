@@ -69,7 +69,7 @@ void minOrMax() {
 
 void volumeCalculator() {
     double r;
-    double volumen = 0;
+    double volume = 0;
 
     printf("*** CÁLCULO DEL VÓLUMEN DE UNA ESFERA ***\n");
 
@@ -86,7 +86,7 @@ void volumeCalculator() {
 
     } while (r <= 0);
 
-    volumen = 4 * M_PI * pow(r, 3) / 3;
+    volume = 4 * M_PI * pow(r, 3) / 3;
 
-    printf("\n**** EL RESULTADO ES: %.2f *****", volumen);
+    printf("\n**** EL RESULTADO ES: %.2f *****", volume);
 }
