@@ -77,10 +77,10 @@ void volumeCalculator() {
         r = get_double("Introduzca el radio: ");
 
         if (r == 0) {
-            printf("El radio no puede ser 0.");
+            printf("El radio no puede ser 0. ");
             continue;
         } else if (r < 0) {
-            printf("El radio no puede ser negativo");
+            printf("El radio no puede ser negativo. ");
             continue;
         }
 
